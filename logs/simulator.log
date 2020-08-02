@@ -1,0 +1,169 @@
+2020-08-02 17:25:08.347 [main] INFO  com.longxinwu.SpringBootStudyApplication - Starting SpringBootStudyApplication on wbMacBook-Pro.local with PID 58970 (/Users/wangbo-mac/Documents/springBoot_study/spring-boot-study/target/classes started by wangbo-mac in /Users/wangbo-mac/Documents/springBoot_study/spring-boot-study)
+2020-08-02 17:25:08.352 [main] INFO  com.longxinwu.SpringBootStudyApplication - No active profile set, falling back to default profiles: default
+2020-08-02 17:25:09.285 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2020-08-02 17:25:09.302 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2020-08-02 17:25:09.303 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-08-02 17:25:09.303 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-02 17:25:09.378 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/websocketdemo] - Initializing Spring embedded WebApplicationContext
+2020-08-02 17:25:09.378 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 980 ms
+2020-08-02 17:25:09.557 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-02 17:25:09.701 [main] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-08-02 17:25:09.745 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2020-08-02 17:25:09.778 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/websocketdemo'
+2020-08-02 17:25:09.787 [main] INFO  com.longxinwu.SpringBootStudyApplication - Started SpringBootStudyApplication in 2.05 seconds (JVM running for 2.432)
+2020-08-02 17:26:46.673 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-02 17:26:52.183 [main] INFO  com.longxinwu.SpringBootStudyApplication - Starting SpringBootStudyApplication on wbMacBook-Pro.local with PID 59007 (/Users/wangbo-mac/Documents/springBoot_study/spring-boot-study/target/classes started by wangbo-mac in /Users/wangbo-mac/Documents/springBoot_study/spring-boot-study)
+2020-08-02 17:26:52.185 [main] INFO  com.longxinwu.SpringBootStudyApplication - No active profile set, falling back to default profiles: default
+2020-08-02 17:26:52.990 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2020-08-02 17:26:53.000 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2020-08-02 17:26:53.001 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-08-02 17:26:53.001 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-02 17:26:53.069 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/websocketdemo] - Initializing Spring embedded WebApplicationContext
+2020-08-02 17:26:53.070 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 850 ms
+2020-08-02 17:26:53.235 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-02 17:26:53.353 [main] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-08-02 17:26:53.411 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2020-08-02 17:26:53.452 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/websocketdemo'
+2020-08-02 17:26:53.463 [main] INFO  com.longxinwu.SpringBootStudyApplication - Started SpringBootStudyApplication in 1.648 seconds (JVM running for 2.003)
+2020-08-02 17:28:12.591 [http-nio-8080-exec-6] INFO  o.a.c.c.C.[Tomcat].[localhost].[/websocketdemo] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-02 17:28:12.591 [http-nio-8080-exec-6] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-08-02 17:28:12.598 [http-nio-8080-exec-6] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+2020-08-02 17:28:12.635 [http-nio-8080-exec-6] INFO  com.longxinwu.controller.WebsocketController - 你好 日志
+2020-08-02 17:28:12.954 [Thread-4] INFO  com.longxinwu.thread.LogThread - LoggingWebSocketServer 任务开始
+2020-08-02 17:28:12.957 [Thread-4] ERROR com.longxinwu.thread.LogThread - logThread error:{}
+java.lang.NullPointerException: null
+	at com.longxinwu.thread.LogThread.run(LogThread.java:122)
+2020-08-02 17:28:15.483 [http-nio-8080-exec-8] INFO  com.longxinwu.controller.WebsocketController - 你好 日志
+2020-08-02 17:28:15.515 [Thread-6] INFO  com.longxinwu.thread.LogThread - LoggingWebSocketServer 任务开始
+2020-08-02 17:28:15.516 [Thread-6] ERROR com.longxinwu.thread.LogThread - logThread error:{}
+java.lang.NullPointerException: null
+	at com.longxinwu.thread.LogThread.run(LogThread.java:122)
+2020-08-02 17:28:56.802 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-02 17:29:00.243 [main] INFO  com.longxinwu.SpringBootStudyApplication - Starting SpringBootStudyApplication on wbMacBook-Pro.local with PID 59057 (/Users/wangbo-mac/Documents/springBoot_study/spring-boot-study/target/classes started by wangbo-mac in /Users/wangbo-mac/Documents/springBoot_study/spring-boot-study)
+2020-08-02 17:29:00.245 [main] INFO  com.longxinwu.SpringBootStudyApplication - No active profile set, falling back to default profiles: default
+2020-08-02 17:29:01.031 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2020-08-02 17:29:01.042 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2020-08-02 17:29:01.042 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-08-02 17:29:01.042 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-02 17:29:01.113 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/websocketdemo] - Initializing Spring embedded WebApplicationContext
+2020-08-02 17:29:01.114 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 830 ms
+2020-08-02 17:29:01.301 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-02 17:29:01.412 [main] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-08-02 17:29:01.445 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2020-08-02 17:29:01.470 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/websocketdemo'
+2020-08-02 17:29:01.478 [main] INFO  com.longxinwu.SpringBootStudyApplication - Started SpringBootStudyApplication in 1.772 seconds (JVM running for 2.108)
+2020-08-02 17:29:06.623 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/websocketdemo] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-02 17:29:06.623 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-08-02 17:29:06.629 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+2020-08-02 17:29:06.661 [http-nio-8080-exec-1] INFO  com.longxinwu.controller.WebsocketController - 你好 日志
+2020-08-02 17:29:06.882 [Thread-4] INFO  com.longxinwu.thread.LogThread - LoggingWebSocketServer 任务开始
+2020-08-02 17:29:19.314 [http-nio-8080-exec-4] INFO  com.longxinwu.controller.WebsocketController - 你好 日志
+2020-08-02 17:29:19.329 [Thread-6] INFO  com.longxinwu.thread.LogThread - LoggingWebSocketServer 任务开始
+2020-08-02 17:29:19.985 [Thread-4] INFO  com.longxinwu.thread.LogThread - LoggingWebSocketServer 任务结束
+2020-08-02 17:29:43.843 [http-nio-8080-exec-7] INFO  com.longxinwu.controller.WebsocketController - 你好 日志
+2020-08-02 17:29:43.857 [Thread-8] INFO  com.longxinwu.thread.LogThread - LoggingWebSocketServer 任务开始
+2020-08-02 17:29:44.417 [Thread-6] INFO  com.longxinwu.thread.LogThread - LoggingWebSocketServer 任务结束
+2020-08-02 17:30:00.920 [Thread-8] INFO  com.longxinwu.thread.LogThread - LoggingWebSocketServer 任务结束
+2020-08-02 17:30:09.000 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-02 17:45:15.842 [main] INFO  com.longxinwu.SpringBootStudyApplication - Starting SpringBootStudyApplication on wbMacBook-Pro.local with PID 59482 (/Users/wangbo-mac/Documents/demo/spring-boot-demo/target/classes started by wangbo-mac in /Users/wangbo-mac/Documents/demo/spring-boot-demo)
+2020-08-02 17:45:15.845 [main] INFO  com.longxinwu.SpringBootStudyApplication - No active profile set, falling back to default profiles: default
+2020-08-02 17:45:16.750 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2020-08-02 17:45:16.761 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2020-08-02 17:45:16.761 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-08-02 17:45:16.762 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-02 17:45:16.839 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/websocketdemo] - Initializing Spring embedded WebApplicationContext
+2020-08-02 17:45:16.840 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 925 ms
+2020-08-02 17:45:17.020 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-02 17:45:17.178 [main] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-08-02 17:45:17.224 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2020-08-02 17:45:17.258 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/websocketdemo'
+2020-08-02 17:45:17.267 [main] INFO  com.longxinwu.SpringBootStudyApplication - Started SpringBootStudyApplication in 2.165 seconds (JVM running for 2.633)
+2020-08-02 17:45:36.280 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/websocketdemo] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-02 17:45:36.280 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-08-02 17:45:36.287 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+2020-08-02 17:45:36.319 [http-nio-8080-exec-2] INFO  com.longxinwu.controller.WebsocketController - 你好 日志
+2020-08-02 17:45:36.569 [Thread-4] INFO  com.longxinwu.thread.LogThread - LoggingWebSocketServer 任务开始
+2020-08-02 17:46:56.285 [http-nio-8080-exec-5] INFO  com.longxinwu.controller.WebsocketController - 你好 日志
+2020-08-02 17:46:56.346 [Thread-6] INFO  com.longxinwu.thread.LogThread - LoggingWebSocketServer 任务开始
+2020-08-02 17:47:01.010 [http-nio-8080-exec-9] INFO  com.longxinwu.controller.WebsocketController - 你好 日志
+2020-08-02 17:47:01.365 [Thread-6] INFO  com.longxinwu.thread.LogThread - LoggingWebSocketServer 任务结束
+2020-08-02 17:47:07.499 [http-nio-8080-exec-2] INFO  com.longxinwu.controller.WebsocketController - 你好 warn log
+2020-08-02 17:47:07.528 [http-nio-8080-exec-3] INFO  com.longxinwu.controller.WebsocketController - 你好 warn log
+2020-08-02 17:47:30.716 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-02 17:47:35.651 [main] INFO  com.longxinwu.SpringBootStudyApplication - Starting SpringBootStudyApplication on wbMacBook-Pro.local with PID 59562 (/Users/wangbo-mac/Documents/demo/spring-boot-demo/target/classes started by wangbo-mac in /Users/wangbo-mac/Documents/demo/spring-boot-demo)
+2020-08-02 17:47:35.655 [main] INFO  com.longxinwu.SpringBootStudyApplication - No active profile set, falling back to default profiles: default
+2020-08-02 17:47:36.678 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2020-08-02 17:47:36.690 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2020-08-02 17:47:36.690 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-08-02 17:47:36.691 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-02 17:47:36.765 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/websocketdemo] - Initializing Spring embedded WebApplicationContext
+2020-08-02 17:47:36.765 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1023 ms
+2020-08-02 17:47:36.971 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-02 17:47:37.079 [main] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-08-02 17:47:37.116 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2020-08-02 17:47:37.143 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/websocketdemo'
+2020-08-02 17:47:37.151 [main] INFO  com.longxinwu.SpringBootStudyApplication - Started SpringBootStudyApplication in 2.244 seconds (JVM running for 2.622)
+2020-08-02 17:47:41.086 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/websocketdemo] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-02 17:47:41.087 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-08-02 17:47:41.093 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+2020-08-02 17:47:41.124 [http-nio-8080-exec-1] INFO  com.longxinwu.controller.WebsocketController - 你好 日志
+2020-08-02 17:47:41.369 [Thread-4] INFO  com.longxinwu.thread.LogThread - LoggingWebSocketServer 任务开始
+2020-08-02 17:50:18.891 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-02 17:50:22.261 [main] INFO  com.longxinwu.SpringBootStudyApplication - Starting SpringBootStudyApplication on wbMacBook-Pro.local with PID 59612 (/Users/wangbo-mac/Documents/demo/spring-boot-demo/target/classes started by wangbo-mac in /Users/wangbo-mac/Documents/demo/spring-boot-demo)
+2020-08-02 17:50:22.263 [main] INFO  com.longxinwu.SpringBootStudyApplication - No active profile set, falling back to default profiles: default
+2020-08-02 17:50:23.045 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2020-08-02 17:50:23.055 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2020-08-02 17:50:23.055 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-08-02 17:50:23.055 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-02 17:50:23.121 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/websocketdemo] - Initializing Spring embedded WebApplicationContext
+2020-08-02 17:50:23.122 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 819 ms
+2020-08-02 17:50:23.290 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-02 17:50:23.406 [main] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-08-02 17:50:23.444 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2020-08-02 17:50:23.473 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/websocketdemo'
+2020-08-02 17:50:23.481 [main] INFO  com.longxinwu.SpringBootStudyApplication - Started SpringBootStudyApplication in 1.731 seconds (JVM running for 2.079)
+2020-08-02 17:50:32.112 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/websocketdemo] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-02 17:50:32.112 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-08-02 17:50:32.117 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+2020-08-02 17:50:37.369 [http-nio-8080-exec-2] INFO  com.longxinwu.controller.WebsocketController - 你好 日志
+2020-08-02 17:50:37.635 [Thread-4] INFO  com.longxinwu.thread.LogThread - LoggingWebSocketServer 任务开始
+2020-08-02 17:50:39.085 [http-nio-8080-exec-4] INFO  com.longxinwu.controller.WebsocketController - 你好 日志
+2020-08-02 17:50:39.108 [Thread-6] INFO  com.longxinwu.thread.LogThread - LoggingWebSocketServer 任务开始
+2020-08-02 17:50:39.653 [Thread-4] INFO  com.longxinwu.thread.LogThread - LoggingWebSocketServer 任务结束
+2020-08-02 17:50:59.941 [http-nio-8080-exec-7] INFO  com.longxinwu.controller.WebsocketController - 你好 warn log
+2020-08-02 17:50:59.970 [Thread-7] INFO  com.longxinwu.thread.LogThread - LoggingWebSocketServer 任务开始
+2020-08-02 17:51:00.190 [Thread-6] INFO  com.longxinwu.thread.LogThread - LoggingWebSocketServer 任务结束
+2020-08-02 17:51:22.868 [http-nio-8080-exec-6] INFO  com.longxinwu.controller.WebsocketController - 你好 日志
+2020-08-02 17:51:23.032 [Thread-7] INFO  com.longxinwu.thread.LogThread - LoggingWebSocketServer 任务结束
+2020-08-02 17:51:26.596 [http-nio-8080-exec-8] INFO  com.longxinwu.service.WebSocketService - 收到来自窗口null的信息:nihao
+2020-08-02 17:51:38.393 [http-nio-8080-exec-2] INFO  com.longxinwu.controller.WebsocketController - 你好 日志
+2020-08-02 17:51:38.408 [Thread-8] INFO  com.longxinwu.thread.LogThread - LoggingWebSocketServer 任务开始
+2020-08-02 17:51:50.135 [http-nio-8080-exec-4] INFO  com.longxinwu.service.WebSocketService - 收到来自窗口null的信息:dajihao
+2020-08-02 17:52:00.483 [Thread-8] INFO  com.longxinwu.thread.LogThread - LoggingWebSocketServer 任务结束
+2020-08-02 17:52:08.859 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-02 17:52:13.342 [main] INFO  com.longxinwu.SpringBootStudyApplication - Starting SpringBootStudyApplication on wbMacBook-Pro.local with PID 59639 (/Users/wangbo-mac/Documents/demo/spring-boot-demo/target/classes started by wangbo-mac in /Users/wangbo-mac/Documents/demo/spring-boot-demo)
+2020-08-02 17:52:13.345 [main] INFO  com.longxinwu.SpringBootStudyApplication - No active profile set, falling back to default profiles: default
+2020-08-02 17:52:14.270 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2020-08-02 17:52:14.291 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2020-08-02 17:52:14.292 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-08-02 17:52:14.293 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-02 17:52:14.378 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/websocketdemo] - Initializing Spring embedded WebApplicationContext
+2020-08-02 17:52:14.379 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 997 ms
+2020-08-02 17:52:14.579 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-02 17:52:14.749 [main] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-08-02 17:52:14.793 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2020-08-02 17:52:14.821 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/websocketdemo'
+2020-08-02 17:52:14.831 [main] INFO  com.longxinwu.SpringBootStudyApplication - Started SpringBootStudyApplication in 1.857 seconds (JVM running for 2.231)
+2020-08-02 17:52:39.093 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/websocketdemo] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-02 17:52:39.093 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-08-02 17:52:39.099 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+2020-08-02 17:52:51.959 [http-nio-8080-exec-5] INFO  com.longxinwu.controller.WebsocketController - 你好 warn log
+2020-08-02 17:52:52.252 [Thread-4] INFO  com.longxinwu.thread.LogThread - LoggingWebSocketServer 任务开始
+2020-08-02 17:53:32.840 [http-nio-8080-exec-9] INFO  com.longxinwu.controller.WebsocketController - 你好 日志
+2020-08-02 17:53:32.859 [Thread-6] INFO  com.longxinwu.thread.LogThread - LoggingWebSocketServer 任务开始
+2020-08-02 17:53:33.415 [Thread-4] INFO  com.longxinwu.thread.LogThread - LoggingWebSocketServer 任务结束
+2020-08-02 17:53:35.036 [http-nio-8080-exec-1] INFO  com.longxinwu.controller.WebsocketController - 你好 日志
+2020-08-02 17:53:35.055 [Thread-7] INFO  com.longxinwu.thread.LogThread - LoggingWebSocketServer 任务开始
+2020-08-02 17:53:35.877 [Thread-6] INFO  com.longxinwu.thread.LogThread - LoggingWebSocketServer 任务结束
+2020-08-02 17:53:45.095 [Thread-7] INFO  com.longxinwu.thread.LogThread - LoggingWebSocketServer 任务结束
+2020-08-02 17:53:46.420 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
