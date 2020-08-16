@@ -12,21 +12,21 @@ public class WebsocketController {
     //跳转到websocket界面
     @RequestMapping(value="/webSocket")
     public String webSocket(Model model) {
-        log.info("你好 日志");
+        log.info("websocket 日志");
         return "websocket";
     }
 
     //跳转到logsocket界面
     @RequestMapping(value="/logSocket")
     public String logSocket(Model model) {
-        log.info("你好 日志");
+        log.info("log 日志");
         return "logsocket";
     }
 
     //跳转到warnLogSocket界面
     @RequestMapping(value="/warnLogSocket")
     public String warnLogSocket(Model model) {
-        log.info("你好 warn log");
+        log.warn("你好 warn log");
         return "warnlogsocket";
     }
 }
