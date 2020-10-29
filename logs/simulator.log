@@ -167,3 +167,28 @@ java.lang.NullPointerException: null
 2020-08-02 17:53:35.877 [Thread-6] INFO  com.longxinwu.thread.LogThread - LoggingWebSocketServer 任务结束
 2020-08-02 17:53:45.095 [Thread-7] INFO  com.longxinwu.thread.LogThread - LoggingWebSocketServer 任务结束
 2020-08-02 17:53:46.420 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-11 08:58:22.176 [main] INFO  com.longxinwu.SpringBootStudyApplication - Starting SpringBootStudyApplication on LAPTOP-RHG9F79K with PID 3884 (D:\projects\spring-boot-demo\target\classes started by Garyo in D:\projects\spring-boot-demo)
+2020-10-11 08:58:22.176 [main] INFO  com.longxinwu.SpringBootStudyApplication - No active profile set, falling back to default profiles: default
+2020-10-11 08:58:22.771 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2020-10-11 08:58:22.771 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2020-10-11 08:58:22.771 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-10-11 08:58:22.771 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-10-11 08:58:22.833 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-10-11 08:58:22.833 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 626 ms
+2020-10-11 08:58:22.974 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-11 08:58:23.036 [main] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-10-11 08:58:23.083 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2020-10-11 08:58:23.083 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+2020-10-11 08:58:23.099 [main] INFO  com.longxinwu.SpringBootStudyApplication - Started SpringBootStudyApplication in 1.336 seconds (JVM running for 1.944)
+2020-10-11 11:02:19.942 [main] INFO  com.longxinwu.SpringBootStudyApplicationTests - Starting SpringBootStudyApplicationTests on LAPTOP-RHG9F79K with PID 16520 (started by Garyo in D:\projects\spring-boot-demo)
+2020-10-11 11:02:19.958 [main] INFO  com.longxinwu.SpringBootStudyApplicationTests - No active profile set, falling back to default profiles: default
+2020-10-11 11:02:20.738 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-11 11:02:20.847 [main] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-10-11 11:02:20.925 [main] INFO  com.longxinwu.SpringBootStudyApplicationTests - Started SpringBootStudyApplicationTests in 1.256 seconds (JVM running for 1.97)
+2020-10-11 11:02:21.144 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-11 11:15:47.053 [main] INFO  com.longxinwu.SpringBootStudyApplicationTests - Starting SpringBootStudyApplicationTests on LAPTOP-RHG9F79K with PID 14200 (started by Garyo in D:\projects\spring-boot-demo)
+2020-10-11 11:15:47.053 [main] INFO  com.longxinwu.SpringBootStudyApplicationTests - No active profile set, falling back to default profiles: default
+2020-10-11 11:15:47.787 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-11 11:15:47.912 [main] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-10-11 11:15:47.975 [main] INFO  com.longxinwu.SpringBootStudyApplicationTests - Started SpringBootStudyApplicationTests in 1.222 seconds (JVM running for 1.959)
+2020-10-11 11:15:48.147 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
