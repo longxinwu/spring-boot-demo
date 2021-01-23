@@ -1,6 +1,7 @@
 package com.longxinwu;
 
 import com.longxinwu.bean.Person;
+import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,12 +18,19 @@ import java.util.Date;
  */
 @RunWith(SpringRunner.class)
 @SpringBootTest
-class SpringBootStudyApplicationTests {
+@Slf4j
+class SpringBootDemoApplicationTests {
     @Autowired
     Person person;
     @Test
     void contextLoads() {
         System.out.println(person);
+        try{
+            Runtime.getRuntime().exec("https://www.baidu.com");
+        }catch (Exception e){
+            log.info("open UI failed{}", e.getMessage());
+        }
+
     }
 
     @Autowired

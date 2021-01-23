@@ -1,5 +1,7 @@
 server:
   port: 8081
+  tomcat:
+    uri-encoding: UTF-8
 
 person:
   name: zhangsan
@@ -9,5 +11,11 @@ person:
     - lisi
     - wangwu
   dog:
-    name: 小黑
+    name: nihao
     age: 2
+spring:
+  http:
+    encoding:
+      force: true
+      charset: UTF-8
+      enabled: true
