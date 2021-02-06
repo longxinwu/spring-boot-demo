@@ -33,4 +33,12 @@ public class GetIpAndPortService implements ApplicationListener<WebServerInitial
         return "http://" + address.getHostAddress() + ":" + this.serverPort;
 
     }
+
+    public int getServerPort() {
+        return serverPort;
+    }
+
+    public void setServerPort(int serverPort) {
+        this.serverPort = serverPort;
+    }
 }

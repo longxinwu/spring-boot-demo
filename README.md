@@ -140,6 +140,24 @@ spring-boot启动的时候会扫描一下位置的配置文件，作为默认配
 -file:./
 -classpath:./config
 -classpath:./
+#3. 注解学习
+##1 @EnableAutoConfiguration
+###1 @AutoConfigurationPackage
+```java
+@Import(AutoConfigurationPackages.Registrar.class)
+public @interface AutoConfigurationPackage {}
+//利用Registrar给容器中导入一系列组件
+//将指定的一个包下的所有组件导入进来
+```
+###2 @Import(AutoConfigurationImportSelector.class)
+```java
+//getAutoConfigurationEntry(annotationMetadata)
+```
+
+    
+
+
+
    
 
 
