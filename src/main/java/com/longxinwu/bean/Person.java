@@ -14,7 +14,7 @@ import java.util.Map;
  */
 @Data
 @Component
-@ConfigurationProperties(prefix = "person")
+//@ConfigurationProperties(prefix = "person")
 public class Person {
     /**
      * person:
@@ -25,7 +25,7 @@ public class Person {
      *     - lisi
      *     - wangwu
      */
-    @Value("${person.name}")
+    //@Value("${person.name}")
     private String name;
     private int age;
     private Map<String, Object> map;
