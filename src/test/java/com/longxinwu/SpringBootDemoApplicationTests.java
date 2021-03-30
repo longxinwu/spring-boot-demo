@@ -1,6 +1,7 @@
 package com.longxinwu;
 
 import com.longxinwu.bean.Person;
+import com.longxinwu.controller.UploadFileController;
 import com.longxinwu.singleton.Singleton;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
@@ -25,6 +26,8 @@ import java.util.Date;
 class SpringBootDemoApplicationTests {
     @Autowired
     Person person;
+    @Autowired
+    UploadFileController uploadFileController;
     @Test
     void contextLoads() {
         System.out.println(person);
@@ -75,7 +78,12 @@ class SpringBootDemoApplicationTests {
         } catch (Exception e) {
             e.printStackTrace();
         }
-
+    }
+    @Test
+    public void testFile() throws Exception{
+        String path = "/Users/wangbo-mac/Pictures/Photos\\ Library.photoslibrary/resources/derivatives/6/6ACD407F-AFC2-4957-8A01-340812239ABA_1_105_c.jpeg";
+        File file = new File(path);
+        uploadFileController.getImgInfo(file);
     }
 
 }

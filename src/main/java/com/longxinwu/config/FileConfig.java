@@ -17,7 +17,8 @@ public class FileConfig {
     public MultipartConfigElement multipartConfigElement() {
         MultipartConfigFactory factory = new MultipartConfigFactory();
         //单个文件最大
-        factory.setMaxFileSize(DataSize.ofBytes(30));
+        factory.setMaxFileSize(DataSize.ofMegabytes(30));
+        //DataSize.ofGigabytes()
         /// 设置总上传数据总大小
         factory.setMaxRequestSize(DataSize.ofGigabytes(1));
         return factory.createMultipartConfig();

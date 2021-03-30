@@ -29,7 +29,7 @@ public class HelloController {
     @RequestMapping("/getUser")
     public User getUser() {
         User user=new User();
-        user.setName("小明");
+        user.setUserName("小明");
         user.setAge("26");
         return user;
     }

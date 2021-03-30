@@ -5,9 +5,12 @@
     <title>Title</title>
 </head>
 <body>
-<form method="post" action="http://localhost:8080/demo/upload" enctype="multipart/form-data">
-        <input name = "logos" type = "file"><br>
-        <input name = "logos" type = "file"><br>
+<form method="post" action="http://localhost:8080/demo/upload2" enctype="multipart/form-data">
+        用户名：<input name="userName" type="text"  /> <p/>
+        <input name="acq" value="true" hidden="true"/>
+        <input name="alter" value="false" hidden="true"/>
+        图片1：<input name = "logos" type = "file"><p/>
+        图片2：<input name = "logos" type = "file"><p/>
        <input type = "submit" value = "点击上传">
 </form>
 </body>
