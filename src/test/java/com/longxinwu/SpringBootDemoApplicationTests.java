@@ -2,8 +2,12 @@ package com.longxinwu;
 
 import com.longxinwu.bean.Person;
 import com.longxinwu.controller.UploadFileController;
+import com.longxinwu.service.FileService;
 import com.longxinwu.singleton.Singleton;
+import com.sun.image.codec.jpeg.JPEGEncodeParam;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.imaging.ImageInfo;
+import org.apache.commons.imaging.Imaging;
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,10 +16,17 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.util.ResizableByteArrayOutputStream;
 
+import javax.imageio.ImageIO;
+import java.awt.*;
+import java.awt.image.BufferedImage;
 import java.io.*;
 import java.lang.reflect.Constructor;
-import java.text.SimpleDateFormat;
-import java.util.Date;
+import javax.media.jai.JAI;
+import java.awt.image.RenderedImage;
+import java.awt.image.renderable.ParameterBlock;
+import java.io.File;
+import java.io.IOException;
+import java.util.UUID;
 
 /**
  * spring-boot单元测试
@@ -81,9 +92,113 @@ class SpringBootDemoApplicationTests {
     }
     @Test
     public void testFile() throws Exception{
-        String path = "/Users/wangbo-mac/Pictures/Photos\\ Library.photoslibrary/resources/derivatives/6/6ACD407F-AFC2-4957-8A01-340812239ABA_1_105_c.jpeg";
+        //String path = "/Users/wangbo-mac/Documents/demo/spring-boot-demo/src/main/resources/pic/1.jpeg";
+        String path = "/Users/wangbo-mac/Documents/demo/spring-boot-demo/src/main/resources/pic/2gifdpi.png";
         File file = new File(path);
-        uploadFileController.getImgInfo(file);
+        ImageInfo imageInfo = Imaging.getImageInfo(file);
+        long width = imageInfo.getWidth();
+        long height = imageInfo.getHeight();
+        double physicalWidth = imageInfo.getPhysicalWidthInch() * 25.4;
+        double physicalHeight = imageInfo.getPhysicalHeightInch() * 25.4;
+        int physicalWidthDpi = imageInfo.getPhysicalWidthDpi();
+        int physicalHeightDpi = imageInfo.getPhysicalHeightDpi();
+        BufferedImage img = ImageIO.read(file);
+
+        BufferedImage scaleImg = null;
+        double rate = width / height;
+        int scaleWidth = 0;
+        int scaleHeight = 0;
+        if(rate > 3.125){
+            double rate1 = width / 100;
+            double height1 = height * rate1;
+            scaleWidth = (int) width;
+            scaleHeight = (int) height1;
+            //scaleImg = scaleImage(img, scaleWidth, scaleHeight);
+
+        }
+        if(rate < 3.125){
+            double rate2 = height / 32;
+            double width1 = width * rate2;
+            int scaleWidthInt = (int) width1;
+            int heightInt = (int) height;
+            //scaleImg = scaleImage(img, scaleWidthInt, heightInt);
+        }
+        //ImageIO.write(scaleImg, "png", new File("/Users/wangbo-mac/Documents/demo/spring-boot-demo/src/main/resources/pic/33.png"));
+
     }
 
+    public void drawPicture(int width, int height){
+        int alphaType = BufferedImage.TYPE_INT_RGB;
+        BufferedImage back = new BufferedImage(width, height, alphaType);
+        Graphics2D g = back.createGraphics();
+        //g.drawImage(backGroundImage, 0, 0, null);
+    }
+
+
+    @Autowired
+    FileService fileService;
+    @Test
+    public void reSizePic() throws  Exception{
+        //String path = "/Users/wangbo-mac/Documents/demo/spring-boot-demo/src/main/resources/pic/1gif.gif";
+        String path2 = "/Users/wangbo-mac/Documents/demo/spring-boot-demo/src/main/resources/pic/4gif.jpg";
+        String path3 = "/Users/wangbo-mac/Documents/demo/spring-boot-demo/src/main/resources/pic/4gif.jpg";
+        //File inFile = new File(path);
+        File outFile = new File(path2);
+        File outFileDpi = new File(path3);
+        //BufferedImage oriImg = ImageIO.read(inFile);
+        //BufferedImage reSetTypeImg = fileService.changeImgType(oriImg, oriImg.getWidth(), oriImg.getHeight());
+        //ImageIO.write(reSetTypeImg, "jpg", outFile);
+        fileService.setImgDpi(outFile, outFileDpi);
+    }
+
+    @Test
+    public void tiffToJpg(){
+        String oldPath = "/Users/wangbo-mac/Documents/demo/spring-boot-demo/src/main/resources/pic/2gifdpi.jpg";
+        String newPath = "/Users/wangbo-mac/Documents/demo/spring-boot-demo/src/main/resources/pic/2gifdpi.png";
+        try {
+            BufferedImage bufferedImage=ImageIO.read(new File(oldPath));
+            ImageIO.write(bufferedImage,"jpeg",new File(newPath));//可以是png等其它图片格式
+        }catch(IOException e) {
+            e.printStackTrace();
+        }
+    }
+    /*public void testTif2Jpg(){
+        String oldPath = "/Users/wangbo-mac/Documents/demo/spring-boot-demo/src/main/resources/pic/2tiff.tiff";
+        File tif = new File(oldPath);
+        String fileNameIgnore = tif.getName().replaceAll("[.][^.]+$", "");
+        TIFFDecodeParam param0 = null;
+        TIFFEncodeParam param = new TIFFEncodeParam();
+        JPEGEncodeParam param1 = new JPEGEncodeParam();
+        ImageDecoder dec = ImageCodec.createImageDecoder("tiff", tif, param0);
+        int count = dec.getNumPages();
+        param.setCompression(TIFFEncodeParam.COMPRESSION_GROUP4);
+        param.setLittleEndian(false);
+        System.out.println(tif.getName() + "文件含有" + count + "张图片");
+        for (int i = 0; i < count; ) {
+            RenderedImage page = dec.decodeAsRenderedImage(i);
+            //转换后的png图片存储路径,这里设置为tif同级目录。可根据需要修改
+            StringBuffer pngPath = new StringBuffer(tif.getParent()).append(File.separator).append(fileNameIgnore);
+            if (count > 1) {
+                pngPath.append("(").append(++i).append(")");        //大于一张，用(1),(2)...区分
+            }
+            pngPath.append(".png");                                 //png格式
+            File pngFile = new File(pngPath.toString());
+            System.out.println("转换后png图片路径:" + pngFile.getCanonicalPath());
+            ParameterBlock pb = new ParameterBlock();
+            pb.addSource(page);
+            pb.add(pngFile.toString());
+            pb.add("JPEG");
+            pb.add(param1);
+            JAI.create("filestore", pb);
+    }*/
+
+    @Test
+    public void testRandom(){
+        String str = UUID.randomUUID().toString().replaceAll("-","");
+        String str1 = "1234567890up";
+        String str2 = "up";
+        int index = str1.indexOf(str2);
+        String str3 = str1.substring(0, index);
+        System.out.println(str3);
+    }
 }
