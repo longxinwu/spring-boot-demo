@@ -139,15 +139,15 @@ class SpringBootDemoApplicationTests {
     FileService fileService;
     @Test
     public void reSizePic() throws  Exception{
-        //String path = "/Users/wangbo-mac/Documents/demo/spring-boot-demo/src/main/resources/pic/1gif.gif";
+        String path = "/Users/wangbo-mac/Documents/demo/spring-boot-demo/src/main/resources/pic/1gif.gif";
         String path2 = "/Users/wangbo-mac/Documents/demo/spring-boot-demo/src/main/resources/pic/4gif.jpg";
         String path3 = "/Users/wangbo-mac/Documents/demo/spring-boot-demo/src/main/resources/pic/4gif.jpg";
-        //File inFile = new File(path);
+        File inFile = new File(path);
         File outFile = new File(path2);
         File outFileDpi = new File(path3);
-        //BufferedImage oriImg = ImageIO.read(inFile);
-        //BufferedImage reSetTypeImg = fileService.changeImgType(oriImg, oriImg.getWidth(), oriImg.getHeight());
-        //ImageIO.write(reSetTypeImg, "jpg", outFile);
+        BufferedImage oriImg = ImageIO.read(inFile);
+        BufferedImage reSetTypeImg = fileService.changeImgType(oriImg, oriImg.getWidth(), oriImg.getHeight());
+        ImageIO.write(reSetTypeImg, "jpg", outFile);
         fileService.setImgDpi(outFile, outFileDpi);
     }
 
@@ -162,35 +162,6 @@ class SpringBootDemoApplicationTests {
             e.printStackTrace();
         }
     }
-    /*public void testTif2Jpg(){
-        String oldPath = "/Users/wangbo-mac/Documents/demo/spring-boot-demo/src/main/resources/pic/2tiff.tiff";
-        File tif = new File(oldPath);
-        String fileNameIgnore = tif.getName().replaceAll("[.][^.]+$", "");
-        TIFFDecodeParam param0 = null;
-        TIFFEncodeParam param = new TIFFEncodeParam();
-        JPEGEncodeParam param1 = new JPEGEncodeParam();
-        ImageDecoder dec = ImageCodec.createImageDecoder("tiff", tif, param0);
-        int count = dec.getNumPages();
-        param.setCompression(TIFFEncodeParam.COMPRESSION_GROUP4);
-        param.setLittleEndian(false);
-        System.out.println(tif.getName() + "文件含有" + count + "张图片");
-        for (int i = 0; i < count; ) {
-            RenderedImage page = dec.decodeAsRenderedImage(i);
-            //转换后的png图片存储路径,这里设置为tif同级目录。可根据需要修改
-            StringBuffer pngPath = new StringBuffer(tif.getParent()).append(File.separator).append(fileNameIgnore);
-            if (count > 1) {
-                pngPath.append("(").append(++i).append(")");        //大于一张，用(1),(2)...区分
-            }
-            pngPath.append(".png");                                 //png格式
-            File pngFile = new File(pngPath.toString());
-            System.out.println("转换后png图片路径:" + pngFile.getCanonicalPath());
-            ParameterBlock pb = new ParameterBlock();
-            pb.addSource(page);
-            pb.add(pngFile.toString());
-            pb.add("JPEG");
-            pb.add(param1);
-            JAI.create("filestore", pb);
-    }*/
 
     @Test
     public void testRandom(){

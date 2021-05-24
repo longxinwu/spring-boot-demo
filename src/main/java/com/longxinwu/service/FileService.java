@@ -79,12 +79,12 @@ public class FileService {
         //Image rescaled = image.getScaledInstance(w, h, Image.SCALE_AREA_AVERAGING);
         //BufferedImage output = toBufferedImage(rescaled, BufferedImage.TYPE_INT_RGB);
 
-        Element tree = (Element) data.getAsTree("javax_imageio_jpeg_image_1.0");
+        /*Element tree = (Element) data.getAsTree("javax_imageio_jpeg_image_1.0");
         Element jfif = (Element) tree.getElementsByTagName("app0JFIF").item(0);
         for (int i = 0; i < jfif.getAttributes().getLength(); i++) {
             Node attribute = jfif.getAttributes().item(i);
             System.out.println(attribute.getNodeName() + "=" + attribute.getNodeValue());
-        }
+        }*/
         FileOutputStream fos = new FileOutputStream(outFile);
         JPEGImageEncoder jpegEncoder = JPEGCodec.createJPEGEncoder(fos);
         JPEGEncodeParam jpegEncodeParam = jpegEncoder.getDefaultJPEGEncodeParam(image);
