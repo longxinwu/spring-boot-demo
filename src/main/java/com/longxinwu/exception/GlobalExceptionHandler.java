@@ -20,10 +20,6 @@ import javax.xml.ws.Response;
 @ControllerAdvice
 @Slf4j
 public class GlobalExceptionHandler {
-    /*@ExceptionHandler(MaxUploadSizeExceededException.class)
-    public void handleMaxUploadSizeExceededException(MaxUploadSizeExceededException e){
-        log.error("上传文件超过30kb，请选择小于30kb的文件再次上传");
-    }*/
     @ExceptionHandler(MaxUploadSizeExceededException.class)
     @ResponseBody
     ResponseEntity<?> handleControllerException(HttpServletRequest request, Throwable ex) {

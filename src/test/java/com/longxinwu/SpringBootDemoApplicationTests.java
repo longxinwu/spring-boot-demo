@@ -13,6 +13,7 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.ApplicationContext;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.util.ResizableByteArrayOutputStream;
 
@@ -171,5 +172,15 @@ class SpringBootDemoApplicationTests {
         int index = str1.indexOf(str2);
         String str3 = str1.substring(0, index);
         System.out.println(str3);
+    }
+
+    @Autowired
+    RedisTemplate redisTemplate;
+    @Test
+    public void testRedis(){
+        String key = "captcha";
+        redisTemplate.opsForValue().set(key, 1);
+        Long count = redisTemplate.opsForValue().increment(key,1L);
+        System.out.println(redisTemplate.getExpire(key));
     }
 }
