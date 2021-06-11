@@ -1,0 +1,21 @@
+server:
+  port: 8080
+  context-path: /mybatis
+
+##mysql数据源
+spring:
+   datasource:
+    username: root
+    password: mysql
+    #url中database为对应的数据库名称
+    url: jdbc:mysql://localhost:3306/proddb?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=Asia/Shanghai
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+mybatis:
+  mapper-locations: classpath:mapping/*.xml
+  type-aliases-package: com.mybatis.demo.entity
+
+#showSql
+logging:
+  level:
+    com.example.demo.mapper: debug

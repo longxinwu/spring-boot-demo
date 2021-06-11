@@ -1,4 +1,4 @@
-package com.longxinwu.singleton;
+package longxinwu.singleton;
 
 import java.io.Serializable;
 

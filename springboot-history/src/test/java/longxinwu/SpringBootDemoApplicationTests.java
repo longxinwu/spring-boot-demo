@@ -1,11 +1,11 @@
-package com.longxinwu;
+package longxinwu;
 
-import com.longxinwu.bean.Person;
-import com.longxinwu.controller.UploadFileController;
-import com.longxinwu.service.FileService;
-import com.longxinwu.singleton.Singleton;
-import com.sun.image.codec.jpeg.JPEGEncodeParam;
+
 import lombok.extern.slf4j.Slf4j;
+import longxinwu.bean.Person;
+import longxinwu.controller.UploadFileController;
+import longxinwu.service.FileService;
+import longxinwu.singleton.Singleton;
 import org.apache.commons.imaging.ImageInfo;
 import org.apache.commons.imaging.Imaging;
 import org.junit.jupiter.api.Test;
@@ -22,11 +22,6 @@ import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.*;
 import java.lang.reflect.Constructor;
-import javax.media.jai.JAI;
-import java.awt.image.RenderedImage;
-import java.awt.image.renderable.ParameterBlock;
-import java.io.File;
-import java.io.IOException;
 import java.util.UUID;
 
 /**

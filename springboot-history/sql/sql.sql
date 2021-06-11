@@ -7,3 +7,4 @@ create table `prod_user` (
 	role varchar(50) default null ,
 	PRIMARY KEY (id)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+insert into `prod_user` values(1, 'admin1', '123456','admin');
