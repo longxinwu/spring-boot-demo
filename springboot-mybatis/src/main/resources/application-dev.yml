@@ -1,6 +1,7 @@
 server:
   port: 8080
-  context-path: /mybatis
+  servlet:
+    context-path: /mybatis
 
 ##mysql数据源
 spring:
@@ -19,3 +20,4 @@ mybatis:
 logging:
   level:
     com.example.demo.mapper: debug
+  config: classpath:logback-dev.xml
