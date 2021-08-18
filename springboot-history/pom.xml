@@ -15,7 +15,7 @@
     <groupId>com.longxinwu</groupId>
     <artifactId>spring-boot-demo</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>spring-boot-demo</name>
+    <name>spring-boot-history</name>
     <description>study for Spring Boot</description>
 
     <properties>

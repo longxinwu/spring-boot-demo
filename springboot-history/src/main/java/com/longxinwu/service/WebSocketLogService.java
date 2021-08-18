@@ -31,7 +31,7 @@ public class WebSocketLogService {
     private static Map<String, Integer> lengthMap = new ConcurrentHashMap<String, Integer>();
     private final String LOG_SOCKET = "logSocket";
     /**
-     * * 开启新的webSocket请求
+     *  开启新的webSocket请求
      */
     @OnOpen
     public void onOpen(Session session){

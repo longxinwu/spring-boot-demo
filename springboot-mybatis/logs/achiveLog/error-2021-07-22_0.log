@@ -1,0 +1,58 @@
+2021-07-22 21:28:27.840 ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+An attempt was made to call a method that does not exist. The attempt was made from the following location:
+
+    io.lettuce.core.resource.AddressResolverGroupProvider$DefaultDnsAddressResolverGroupWrapper.<clinit>(AddressResolverGroupProvider.java:58)
+
+The following method did not exist:
+
+    io.netty.resolver.dns.DnsNameResolverBuilder.socketChannelType(Ljava/lang/Class;)Lio/netty/resolver/dns/DnsNameResolverBuilder;
+
+The method's class, io.netty.resolver.dns.DnsNameResolverBuilder, is available from the following locations:
+
+    jar:file:/C:/Users/Garyo/.m2/repository/io/netty/netty-all/4.1.36.Final/netty-all-4.1.36.Final.jar!/io/netty/resolver/dns/DnsNameResolverBuilder.class
+
+The class hierarchy was loaded from the following locations:
+
+    io.netty.resolver.dns.DnsNameResolverBuilder: file:/C:/Users/Garyo/.m2/repository/io/netty/netty-all/4.1.36.Final/netty-all-4.1.36.Final.jar
+
+
+Action:
+
+Correct the classpath of your application so that it contains a single, compatible version of io.netty.resolver.dns.DnsNameResolverBuilder
+
+2021-07-22 21:33:11.397 ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+An attempt was made to call a method that does not exist. The attempt was made from the following location:
+
+    io.lettuce.core.resource.AddressResolverGroupProvider$DefaultDnsAddressResolverGroupWrapper.<clinit>(AddressResolverGroupProvider.java:58)
+
+The following method did not exist:
+
+    io.netty.resolver.dns.DnsNameResolverBuilder.socketChannelType(Ljava/lang/Class;)Lio/netty/resolver/dns/DnsNameResolverBuilder;
+
+The method's class, io.netty.resolver.dns.DnsNameResolverBuilder, is available from the following locations:
+
+    jar:file:/C:/Users/Garyo/.m2/repository/io/netty/netty-all/4.1.36.Final/netty-all-4.1.36.Final.jar!/io/netty/resolver/dns/DnsNameResolverBuilder.class
+
+The class hierarchy was loaded from the following locations:
+
+    io.netty.resolver.dns.DnsNameResolverBuilder: file:/C:/Users/Garyo/.m2/repository/io/netty/netty-all/4.1.36.Final/netty-all-4.1.36.Final.jar
+
+
+Action:
+
+Correct the classpath of your application so that it contains a single, compatible version of io.netty.resolver.dns.DnsNameResolverBuilder
+

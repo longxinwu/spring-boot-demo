@@ -3,6 +3,8 @@ package com.mybatis.demo.mapper;
 import com.mybatis.demo.entity.ProdUser;
 import org.apache.ibatis.annotations.Mapper;
 
+import java.util.List;
+
 @Mapper
 public interface ProdUserMapper {
     int deleteByPrimaryKey(Integer id);
@@ -18,4 +20,5 @@ public interface ProdUserMapper {
     int updateByPrimaryKey(ProdUser record);
 
     ProdUser getUserInfo(Integer id);
+    List<String> getPwdList();
 }

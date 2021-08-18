@@ -1,0 +1,27 @@
+2021-08-04 11:20:41.297 INFO  com.mybatis.demo.DemoApplication - Starting DemoApplication using Java 1.8.0_261 on LAPTOP-RHG9F79K with PID 5428 (D:\github\spring-boot-demo\springboot-mybatis\target\classes started by Garyo in D:\github\spring-boot-demo)
+2021-08-04 11:20:41.312 INFO  com.mybatis.demo.DemoApplication - The following profiles are active: dev
+2021-08-04 11:20:42.078 INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-08-04 11:20:42.078 INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-08-04 11:20:42.093 INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2021-08-04 11:20:42.843 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-08-04 11:20:42.859 INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-08-04 11:20:42.859 INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-08-04 11:20:42.859 INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-08-04 11:20:42.968 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-08-04 11:20:42.968 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1624 ms
+2021-08-04 11:20:44.050 INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-08-04 11:20:44.326 INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2021-08-04 11:20:44.342 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-04 11:20:44.343 INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-08-04 11:20:44.348 INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-08-04 11:20:44.379 INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-08-04 11:20:44.457 INFO  com.mybatis.demo.DemoApplication - Started DemoApplication in 3.678 seconds (JVM running for 4.121)
+2021-08-04 11:20:44.457 INFO  o.s.boot.availability.ApplicationAvailabilityBean - Application availability state LivenessState changed to CORRECT
+2021-08-04 11:20:44.473 INFO  o.s.boot.availability.ApplicationAvailabilityBean - Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-08-04 11:20:44.680 INFO  com.mybatis.demo.netty.WebSocketNettyServer - netty server start success on port:8081
+2021-08-04 11:21:01.756 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-04 11:21:01.756 INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-08-04 11:21:01.757 INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2021-08-04 11:22:51.282 INFO  com.mybatis.demo.controller.ProdUserController - info级别的日志
+2021-08-04 11:22:51.312 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-08-04 11:22:51.924 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.

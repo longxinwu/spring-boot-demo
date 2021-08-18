@@ -1,10 +1,10 @@
 package longxinwu;
 
 
+import com.longxinwu.bean.Person;
+import com.longxinwu.controller.UploadFileController;
+import com.longxinwu.service.FileService;
 import lombok.extern.slf4j.Slf4j;
-import longxinwu.bean.Person;
-import longxinwu.controller.UploadFileController;
-import longxinwu.service.FileService;
 import longxinwu.singleton.Singleton;
 import org.apache.commons.imaging.ImageInfo;
 import org.apache.commons.imaging.Imaging;

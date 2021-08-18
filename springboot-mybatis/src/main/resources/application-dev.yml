@@ -1,16 +1,47 @@
 server:
   port: 8080
-  servlet:
-    context-path: /mybatis
+  #servlet:
+    #context-path: /demo
+#  netty服务端口和webSocket path
+netty:
+  port: 8081
+  path: /chat
 
+#静态资源位置和视图解析器
+resources:
+  static-locations:
+    - classpath:/static/
 ##mysql数据源
 spring:
-   datasource:
+  datasource:
     username: root
     password: mysql
     #url中database为对应的数据库名称
     url: jdbc:mysql://localhost:3306/proddb?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=Asia/Shanghai
+    #url: jdbc:mysql://106.14.214.126:3306/prod_db?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=Asia/Shanghai
     driver-class-name: com.mysql.cj.jdbc.Driver
+
+    #redis配置
+    redis:
+      host: 127.0.0.1
+      port: 6379
+      password:
+      lettuce:
+        pool:
+          max-active: 8
+          max-wait: -1
+          max-idle: 8
+          min-idle: 0
+  #前端视图模板配置
+  thymeleaf:
+    cache: false
+    checktemplatelocation: true
+    enabled: true
+    encoding: UTF-8
+    mode: HTML5
+    prefix: classpath:/templates/
+    suffix: .html
+    content-type: text/html
 
 mybatis:
   mapper-locations: classpath:mapping/*.xml
@@ -21,3 +52,4 @@ logging:
   level:
     com.example.demo.mapper: debug
   config: classpath:logback-dev.xml
+

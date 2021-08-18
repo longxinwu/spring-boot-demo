@@ -82,4 +82,7 @@
   <select id="getUserInfo" resultType="com.mybatis.demo.entity.ProdUser">
     select user_name from prod_user where id = #{id, jdbcType=INTEGER}
   </select>
+  <select id="getPwdList" resultType="java.lang.String">
+    select user_pass from prod_user
+  </select>
 </mapper>

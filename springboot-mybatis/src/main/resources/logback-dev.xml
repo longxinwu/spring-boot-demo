@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration debug="true">
-
-
     <property name="CONSOLE_LOG_PATTERN" value="%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %logger{50} - %msg%n"/>
-
     <property name="LOG_HOME" value="./springboot-mybatis/logs"/>
-
 
     <!--输出到控制台-->
     <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
@@ -26,6 +22,7 @@
         </filter>
         <encoder>
             <pattern>${CONSOLE_LOG_PATTERN}</pattern>
+            <charset>utf8</charset>
         </encoder>
         <file>${LOG_HOME}/info.log</file>
         <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
@@ -47,6 +44,7 @@
         </filter>
         <encoder>
             <pattern>${CONSOLE_LOG_PATTERN}</pattern>
+            <charset>utf8</charset>
         </encoder>
         <file>${LOG_HOME}/warn.log</file>
         <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
@@ -65,6 +63,7 @@
         </filter>
         <encoder>
             <pattern>${CONSOLE_LOG_PATTERN}</pattern>
+            <charset>utf8</charset>
         </encoder>
         <file>${LOG_HOME}/error.log</file>
         <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
