@@ -13,7 +13,7 @@ import java.io.*;
 @Slf4j
 public class FileUtil {
     public static void saveData(String urlStr, String data){
-        log.info("saveData:{}",urlStr+data);
+        log.info("save:{}",urlStr+data);
         BufferedWriter writer = null;
         File file = new File(urlStr);
         if(!file.exists()){
@@ -24,11 +24,11 @@ public class FileUtil {
             }
         }
         try{
-            log.info("saveData1:{}",data);
+            log.info("save1:{}",data);
             writer = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(file, false),"UTF-8"));
             writer.write(data);
             writer.flush();
-            log.info("saveData2:{}", "完成");
+            log.info("save2:{}", "完成");
         }catch (IOException e){
             e.printStackTrace();
         }finally {
@@ -47,7 +47,7 @@ public class FileUtil {
         String readData = null;
 
         File file = new File(urlStr);
-        log.info("file===:{}",file.exists());
+        log.info("file==:{}",file.exists());
         if(!file.exists()){
             try{
                 file.createNewFile();

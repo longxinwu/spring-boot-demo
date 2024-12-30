@@ -14,7 +14,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.xml.ws.Response;
 
 /**
- * @Author wang bo
+ * @Author wang bo 异常函数处理
  * @Date 2021/3/18 下午9:33
  */
 @ControllerAdvice
